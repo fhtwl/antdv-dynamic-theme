@@ -464,3 +464,11 @@ export default defineComponent({
 </script>
 ...
 ```
+
+## 5. 总结
+
+至此, 基于 vue3 和 antdv 的主题色切换功能完成了. <br />
+
+有好的建议，请在下方输入你的评论。<br />
+
+完整代码可以访问<a href="https://github.com/fhtwl/antdv-dynamic-theme" > github </a>
