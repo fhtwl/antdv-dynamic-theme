@@ -10,11 +10,9 @@
 
 - css 变量(不兼容 ie)
 
-本文主要还是使用 css 变量来实现主题色的切换, 毕竟都上 vue3 了, 不兼容 ie 也就算不上缺点了. <br />
+但是这些基本都是针对 vue2 的, 我在网上并没有找到比较完整的解决 vue3 换肤的方案, 大多只处理了自定义样式或者 ui 框架(比如 antdv)二者之一的主题切换, <a href="https://www.antdv.com/docs/vue/customize-theme-variable-cn" >antdv 官网</a>对动态主题的说明也不够清晰, 且与推荐的按需加载插件 unplugin-vue-components 有冲突 <br />
 
-主题色切换主要难点有 2:
-
-css 变量可以很轻松实现自定义样式的主题色切换, antdv 需要将 css 变量覆盖 ui 框架的 less 变量实现主题色切换 <br />
+我最终放弃了 unplugin-vue-components 的样式的按需加载, 采取组件按需加载, 样式全量加载, 并通过 css 变量和 antdv 的 ConfigProvider 实现了在线主题色切换 <br />
 
 下面是具体是实现
 
